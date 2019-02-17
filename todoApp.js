@@ -3,8 +3,6 @@ let taskInput = document.getElementById('taskInput');
 let inCompletedTasks = document.getElementById('inCompletedTasks');
 let completedTasks = document.getElementById('completedTasks');
 
-// console.log(taskInput.value)
-
 addBtn.addEventListener('click', () => {
 
     let taskDiv = document.createElement('div');
@@ -13,7 +11,7 @@ addBtn.addEventListener('click', () => {
     
     taskDiv.classList.add('tasks');
     
-    taskDiv.innerHTML = "<button class='taskBtn'>compelted</button>" + taskInput.value;
+    taskDiv.innerHTML = "<input class='taskBtn' type='checkbox'>" + taskInput.value;
     
     if(taskInput.value.trim() != ''){
         
@@ -40,19 +38,3 @@ console.log(taskBtn)
 
 let cmpTaskDiv = document.createElement('div');
 
-taskBtn.addEventListener('click', () => {
-    alert('clicked')
-    // tDiv.remove()
-})
-
-// function check(){
-
-//     tDiv.remove();
-
-//     // cmpTaskDiv.innerText = taskInput.value;
-
-//     // console.log(taskInput.value);
-
-//     // completedTasks.appendChild(cmpTaskDiv);
-
-// }
