@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        html, body{
+            font-family:sans-serif;
+        }
+   
+        .container{
+            width: 45rem;
+            /* height: auto; */
+            overflow: hidden;
+            padding: 1rem;
+            border: rgb(226, 128, 128) solid 3px;
+            margin: 2rem auto;
+            text-align: center;
+            border-radius: 4px;
+            /* background-color: rgb(79, 79, 214) ; */
+            background: linear-gradient(#c156ca, #545baa);
+            color: white;
+        }
+
+        .tasks{
+            border-bottom: gray dashed 1px;
+            padding: .5rem 0;
+            margin: 0 auto;
+            width: 80%;
+            text-align: left;
+        }
+
+        .addTaskContainer{
+            background: linear-gradient(to left, #364cac, #ca5656);
+            padding: .5rem 0;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+
+        }
+
+        #inCompletedTasks{
+            width: 20em;
+            background-color:#aa5454;
+            padding: 1rem 0;
+            font-weight: bold;
+            float: left;
+            border-radius: 4px;
+        }
+
+        .inCompletedTitle{
+            border-bottom: gray solid 1px;
+            margin: 0 auto;
+            width: 80%;
+            padding-bottom: .5rem;
+        }
+
+        #completedTasks{
+            width: 20em;
+            background-color:#364cac;
+            padding: 1rem 0;
+            font-weight: bold;
+            float: right;
+            border-radius: 4px;
+        }
+
+        .completedTitle{
+            border-bottom: gray solid 1px;
+            margin: 0 auto;
+            width: 80%;
+            padding-bottom: .5rem;
+
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>TO-DO APP</h1>
+
+        <div class="addTaskContainer">
+            <label for="taskInput">
+                Add New Task :
+                <input type="text" id="taskInput" placeholder="eg. workout">
+                <input type="button" value="Add Task" id="addTaskBtn">
+            </label>
+        </div>
+
+        <div id="inCompletedTasks">
+            <div class="inCompletedTitle">
+                INCOMPLETE TASKS
+            </div>
+        </div>
+
+        <div id="completedTasks">
+            <div class="completedTitle">
+                COMPLETED TASKS
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./todoApp.js"></script>
+
+</body>
+
+</html>
